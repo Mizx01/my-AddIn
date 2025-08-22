@@ -3,6 +3,22 @@
 	<ribbon>
 		<tabs>
 			<tab id="system_tab" label="System" insertBeforeMso="TabInsert">
+				<group id="ClipBoard" >
+					<splitButton idMso="PasteMenu" size="large" />
+					<button idMso="Cut" showLabel="false" />
+					<button idMso="Copy" showLabel="false" />
+					<control idMso="FormatPainter" showLabel="false" />
+				</group>
+				
+				<group idMso="GroupFont" />         <!-- Шрифт -->
+				
+				<group id="GroupAlignment" >
+					<toggleButton idMso="WrapText" showLabel="false" />
+					<splitButton idMso="MergeCenterMenu" showLabel="false" />
+				</group>    <!-- Выравнивание -->
+				
+				<group idMso="GroupNumber" />       <!-- Число -->
+				
 				<group id="system_macros" label="Макросы">
 					<button id="macros_system_worksheet" 
 							label="System" 
@@ -51,7 +67,15 @@
 							image="sonic"
 							supertip="Сравнивает столбцы D (E) L M N и складывает значения в столбцах F (H) J K при совпадении. Столбцы E и H учитывается только при нажатии кнопки 'Да' " 
 							onAction="macros_sokr_onAction" />
+					
+					
+					<button idMso="AutoSum" />
+					<toggleButton idMso="Filter" />
+					<button idMso="SortClear" />
 				</group>
+				
+
+				
 			</tab>
 		</tabs>
 	</ribbon>
