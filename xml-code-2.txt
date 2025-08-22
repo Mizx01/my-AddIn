@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+	<ribbon>
+		<tabs>
+			<tab id="system_tab" label="System" insertBeforeMso="TabInsert">
+				<group id="system_macros" label="Макросы">
+					<button id="macros_system_worksheet" 
+							label="System" 
+							imageMso="CatalogMergeMoreRowsColumns" 
+							screentip="Создает бланк нашей рабочей таблицы"
+							onAction="macros_system_worksheet_onAction" />
+					<button id="macros_parsiyel_brut_kap"
+							label="Сборка"
+							imageMso="SetPertWeights"
+							onAction="macros_parsiyel_brut_kap_onAction" />
+					<button id="macros_system_format"
+							label="Формат"
+							image="format"
+							supertip="Форматирует по нашему и добавляет суммы мест и весов"
+							onAction="macros_system_format_onAction" />
+					
+					<button id="macros_dursun" 
+							label="Дурсун"
+							image="dursun"
+							screentip="Обрабатывает файл Дурсуна"
+							supertip="Нажимаете на эту кнопку сразу как только открыли файл Дурсуна"
+							onAction="macros_dursun_onAction" />
+					<button id="macros_sahlar"
+							label="Шахлар"
+							image="sahlar"
+							onAction="macros_sahlar_onAction" />
+					<button id="macros_remove_decimal_tail"
+							label="Веса"
+							imageMso="ClearAll"
+							supertip="Удаляет формулу и оставляет только два знака после запятой"
+							onAction="macros_remove_decimal_tail_onAction" />	
+					
+					<button id="macros_decode_country"
+							label="Страны"
+							imageMso="SendCopyFlag"
+							supertip="Пишет полное наименование стран на русском"
+							onAction="macros_decode_country_onAction" />
+					<button id="macros_remove_artikul_marka"
+							label="Марки"
+							imageMso="Cut"
+							screentip="Марки из артикулов"
+							supertip="Вытаскивает из артикула марки и артикулы по отдельности/ Марки вставятся в правый соседний столбец от выбранного столбца артикулов"
+							onAction="macros_remove_artikul_marka_onAction" />
+					<button id="macros_sokr" 
+							label="Сократить"
+							image="sonic"
+							supertip="Сравнивает столбцы D (E) L M N и складывает значения в столбцах F (H) J K при совпадении. Столбцы E и H учитывается только при нажатии кнопки 'Да' " 
+							onAction="macros_sokr_onAction" />
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
