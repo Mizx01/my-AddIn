@@ -13,6 +13,17 @@
 				<group idMso="GroupFont" />         <!-- Шрифт -->
 				
 				<group id="GroupAlignment" >
+					<box id="VerticalBox1" boxStyle="vertical" >
+						<toggleButton idMso="AlignTopExcel" showLabel="false" size="large" />
+						<toggleButton idMso="AlignLeft" showLabel="false" size="large" />
+					</box>
+					
+					<toggleButton idMso="AlignMiddleExcel" showLabel="false" />
+					<toggleButton idMso="AlignCenter" showLabel="false" />
+					
+					<toggleButton idMso="AlignBottomExcel" showLabel="false" />
+					<toggleButton idMso="AlignRight" showLabel="false" />
+				
 					<toggleButton idMso="WrapText" showLabel="false" />
 					<splitButton idMso="MergeCenterMenu" showLabel="false" />
 				</group>    <!-- Выравнивание -->
